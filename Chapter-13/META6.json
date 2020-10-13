@@ -1,0 +1,15 @@
+{
+    "authors" : [
+	"JJ Merelo"
+    ],
+    "description" : "Raku Recipes",
+    "license" : "Artistic-2.0",
+    "name" : "Raku Recipes examples, Chapter 13",
+    "perl" : "6.d",
+    "provides" : { },
+    "tags" : [
+	"book","Apress", "databases"
+    ],
+    "depends" : [ "Termbox","GTK::Simple", "SDL2:auth<github:JJ>" ],
+    "version" : "0.0.1"
+}

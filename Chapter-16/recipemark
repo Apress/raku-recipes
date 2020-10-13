@@ -1,0 +1,60 @@
+#!/usr/bin/env raku
+
+use lib <lib ../lib>;
+
+use RecipeMark;
+
+use Template::Classic;
+use Terminal::ANSIColor;
+
+multi sub MAIN( "check", $file where .IO.e ) {
+    say RecipeMark.new( $file ).to-json;
+}
+
+multi sub MAIN( "shopping-list", $file where .IO.e ) {
+    say "# Shopping list\n\n",
+            RecipeMark.new( $file )
+            .product-list
+            .sort
+            .map( {"* [ ] $_."})
+            .join: "\n";
+}
+
+multi sub MAIN("md", $file where .IO.e ) {
+    my $template-file= template-file "templates/recipemark.md";
+    my &generate-page := template :($recipemark), $template-file;
+    my $recipemark = RecipeMark.new( $file );
+    say generate-page( $recipemark).eager.join
+
+}
+
+multi sub MAIN("html", $file where .IO.e ) {
+    my $template-file= template-file "templates/recipemark.html";
+    my &generate-page := template :($recipemark), $template-file;
+    my $recipemark = RecipeMark.new( $file );
+    say generate-page( $recipemark).eager.join
+
+}
+
+multi sub MAIN("mmf", $file where .IO.e ) {
+    my $template-file= template-file "templates/recipemark.mmf";
+    my &generate-page := template :($categories, $recipemark), $template-file;
+    my $categories = $file.split("/")[1..*-2].join(", ");
+    my $recipemark = RecipeMark.new( $file );
+    say generate-page( $categories, $recipemark).eager.join
+
+}
+
+multi sub MAIN( "vegan", $file where .IO.e ) {
+    my $recipemark = RecipeMark.new( $file );
+    say $recipemark.title,
+            $recipemark.vegan ??
+            color("green") ~ " is vegan " ~ color("reset")!!
+            " is " ~ color("red") ~ "not" ~ color("reset") ~ " vegan ";
+}
+
+sub template-file( $template-name ) {
+    "resources/$template-name".IO.e
+            ??"resources/$template-name".IO.slurp
+            !!%?RESOURCES{$template-name}.slurp
+}

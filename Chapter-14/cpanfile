@@ -1,0 +1,2 @@
+requires 'MealMaster';
+requires "Text::Markdown";

@@ -1,0 +1,15 @@
+{
+    "authors" : [
+	"JJ Merelo"
+    ],
+    "description" : "Perl 6 Recipes",
+    "license" : "Artistic-2.0",
+    "name" : "Perl 6 Recipes examples",
+    "perl" : "6.d",
+    "provides" : {},
+    "tags" : [
+	"book","Apress", "Raku", "examples", "recipes", "cooking"
+    ],
+    "depends" : [ "Text::Markdown" ],
+    "version" : "0.0.2"
+}

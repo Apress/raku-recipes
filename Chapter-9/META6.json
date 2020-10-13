@@ -1,0 +1,16 @@
+{
+    "authors" : [
+	"JJ Merelo"
+    ],
+    "description" : "Raku Recipes",
+    "license" : "Artistic-2.0",
+    "name" : "Raku Recipes examples Chapter 8",
+    "perl" : "6.d",
+    "provides" : { },
+    "tags" : [
+	"book","Apress", "System"
+    ],
+    "depends" : [ "GeoIP2","HTTP::UserAgent", "DOM::Tiny", "WWW",
+        "Cro::HTTP", "JSON::Fast", "Wikidata::API", "Services::PortMapping", "Sys::IP", "CheckSocket"],
+    "version" : "0.0.1"
+}

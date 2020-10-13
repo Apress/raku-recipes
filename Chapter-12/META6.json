@@ -1,0 +1,15 @@
+{
+    "authors" : [
+	"JJ Merelo"
+    ],
+    "description" : "Raku Recipes",
+    "license" : "Artistic-2.0",
+    "name" : "Raku Recipes examples, Chapter 12",
+    "perl" : "6.d",
+    "provides" : { },
+    "tags" : [
+	"book","Apress", "databases"
+    ],
+    "depends" : [ "DBIish","Red", "Redis", "Wikidata::API", "JSON::Fast", "MongoDB" ],
+    "version" : "0.0.1"
+}

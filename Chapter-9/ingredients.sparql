@@ -1,0 +1,8 @@
+SELECT ?recipe ?recipeLabel
+WHERE
+{
+  ?recipe wdt:P31?/wdt:P279* wd:Q219239;
+            wdt:P527 wd:Q21546392.
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "en", "fr". }
+}
+ORDER BY UCASE(STR(?recipeLabel))

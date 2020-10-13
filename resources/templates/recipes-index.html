@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Raku Recipes: index</title>
+<link rel='stylesheet' id='style-css'  href='raku-recipes.css' type='text/css'
+      media='all' />
+</head>
+<body>
+<!-- This is a Template::Classic template -->
+<h1>Recipes: index</h1>
+
+<ul>
+    <% for %links.kv -> $file, $title { %>
+    <li><a href="<%= $file %>"><%= $title %></a></li>
+    <% } %>
+</ul>
+
+</body>
+</html>

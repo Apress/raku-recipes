@@ -1,0 +1,15 @@
+{
+    "authors" : [
+	"JJ Merelo"
+    ],
+    "description" : "Raku Recipes",
+    "license" : "Artistic-2.0",
+    "name" : "Raku Recipes examples Chapter 8",
+    "perl" : "6.d",
+    "provides" : { },
+    "tags" : [
+	"book","Apress", "System"
+    ],
+    "depends" : [ "Grammar::Tracer"],
+    "version" : "0.0.1"
+}

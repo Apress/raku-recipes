@@ -1,0 +1,15 @@
+---
+env:  []
+cro: 1
+links:  []
+id: calories
+name: calories
+entrypoint: service.p6
+endpoints: 
+  - 
+    id: http
+    protocol: http
+    host-env: CALORIES_HOST
+    port-env: CALORIES_PORT
+    name: HTTP
+...

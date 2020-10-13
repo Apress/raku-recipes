@@ -1,0 +1,36 @@
+Ingredient;Unit;Calories;Dairy;Vegan;Main;Side;Protein;Dessert
+Rice;100g;130;No;Yes;Yes;Yes;2.7;Yes
+Chickpeas;100g;364;No;Yes;Yes;Yes;7;No
+Lentils;100g;116;No;Yes;Yes;Yes;7.4;No
+Egg;Unit;78;Yes;No;Yes;No;13;No
+Apple;Unit;52;No;Yes;No;No;0.3;Yes
+Beer;⅓ liter;216;No;Yes;No;No;0.3;No
+Tuna;100g;130;No;No;Yes;No;23.5;No
+Cheese;100g;128;Yes;No;No;No;25.4;Yes
+Chorizo;100g;455;No;No;Yes;No;24;No
+Potatoes;100g;82;No;Yes;No;Yes;2;No
+Tomato;100g;24;No;Yes;No;Yes;0.9;No
+Olive oil;1 tablespoon;119;No;Yes;No;No;0;No
+Pasta;100g;131;No;No;Yes;Yes;6.6;No
+Chicken breast;100g;101;No;No;Yes;No;32;No
+Kidney beans;100g;127;No;Yes;Yes;Yes;8.7;No
+Kale;100g;28;No;Yes;No;Yes;1.9;No
+Sardines;100g;208;No;No;Yes;No;25;No
+Orange;Unit;65;No;Yes;No;No;1;Yes
+Green kiwi;Unit;42;No;Yes;No;No;0.8;Yes
+Beef;100g;217;No;No;Yes;No;26.1;No
+Cashews;100g;553;No;Yes;No;Yes;18;No
+Sundried tomatoes;100g;213;No;Yes;No;Yes;5;No
+Cod;85g;90;No;No;Yes;No;19;No
+Skyr drink;100g;54;Yes;No;No;No;7.4;Yes
+Fish broth;100g;17;No;No;No;Yes;2.3;No
+Butter;100g;717;Yes;No;No;No;0.9;No
+White wine;100g;82;No;Yes;No;No;0.1;No
+Wine;100g;83;No;Yes;No;No;0.1;No
+Onion;100g;40;No;Yes;No;Yes;1.1;No
+Garlic;clove;4;No;Yes;No;Yes;0.2;No
+Carrots;100g;41.35;No;Yes;No;Yes;0.93;No
+Wheat tortillas;Unit;127;No;Yes;No;Yes;4;No
+Cottage cheese;100g;98;Yes;No;No;Yes;11;Yes
+Avocados;100g;160;No;Yes;No;Yes;2;Yes
+Molasses;1 tablespoon;58;No;Yes;No;No;0.001;Yes

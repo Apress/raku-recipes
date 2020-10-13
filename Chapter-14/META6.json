@@ -1,0 +1,15 @@
+{
+    "authors" : [
+	"JJ Merelo"
+    ],
+    "description" : "Raku Recipes",
+    "license" : "Artistic-2.0",
+    "name" : "Raku Recipes examples, Chapter 13",
+    "perl" : "6.d",
+    "provides" : { },
+    "tags" : [
+	    "book","Apress", "NativeCall"
+    ],
+    "depends" : [ "Inline::Perl5", "Inline::Python" ],
+    "version" : "0.0.1"
+}

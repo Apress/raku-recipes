@@ -1,0 +1,15 @@
+{
+    "authors" : [
+	"JJ Merelo"
+    ],
+    "description" : "Raku Recipes",
+    "license" : "Artistic-2.0",
+    "name" : "Raku Recipes examples Chapter 6",
+    "perl" : "6.d",
+    "provides" : { },
+    "tags" : [
+	"book","Apress", "System"
+    ],
+    "depends" : [ "Sys::Lastlog", "Docker::API", "Syslog::Parse", "Git::Log", "Term::Choose", "Term::TablePrint", "Libarchive::Simple"],
+    "version" : "0.0.1"
+}

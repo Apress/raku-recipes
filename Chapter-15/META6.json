@@ -1,0 +1,15 @@
+{
+    "authors" : [
+	"JJ Merelo"
+    ],
+    "description" : "Raku Recipes",
+    "license" : "Artistic-2.0",
+    "name" : "Raku Recipes examples, Chapter 15",
+    "perl" : "6.d",
+    "provides" : { },
+    "tags" : [
+	    "book","Apress", "Concurrency"
+    ],
+    "depends" : [ "cmark::Simple", "Log::Timeline","Wikidata::API", "Cro::HTTP", "Markit", "URI::Encode", "Template::Classic" ],
+    "version" : "0.0.1"
+}

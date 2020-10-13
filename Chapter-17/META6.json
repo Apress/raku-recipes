@@ -1,0 +1,15 @@
+{
+    "authors" : [
+	"JJ Merelo"
+    ],
+    "description" : "Raku Recipes",
+    "license" : "Artistic-2.0",
+    "name" : "Raku Recipes examples, Chapter 17",
+    "perl" : "6.d",
+    "provides" : { },
+    "tags" : [
+	"book","Apress"
+    ],
+    "depends" : [ "Test::Script","FileSystem::Capacity" ],
+    "version" : "0.0.1"
+}

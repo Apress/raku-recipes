@@ -1,0 +1,15 @@
+{
+    "authors" : [
+	"JJ Merelo"
+    ],
+    "description" : "Perl 6 Recipes",
+    "license" : "Artistic-2.0",
+    "name" : "Perl 6 Recipes examples Chapter 4",
+    "perl" : "6.d",
+    "provides" : { },
+    "tags" : [
+	"book","Apress"
+    ],
+    "depends" : [ "Array::Shaped::Console", "Math::Matrix"],
+    "version" : "0.0.1"
+}

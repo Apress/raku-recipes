@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe: <%= $recipemark.title %></title>
+<link rel='stylesheet' id='style-css'  href='raku-recipes.css' type='text/css'
+      media='all' />
+</head>
+<body>
+<!-- This is a Template::Classic template -->
+
+<h1><% $recipemark.title %></h1>
+
+<p><% $recipemark.description %></p>
+
+<h2>Ingredients (for <%= $recipemark.persons %> persons)</h2>
+
+<ul>
+<%
+use URI::Encode;
+my %ingredients = $recipemark.ingredient-list;
+for %ingredients.kv -> $product, %data {
+take "<li> %data<quantity> %data<unit> "
+    ~ "<a href='/Ingredient/" ~ uri_encode($product) ~ "'>"
+    ~ lc $product ~ "</a>"
+    ~ (" %data<options>" if %data<options> ) ~ "</li>\n";
+} %>
+</ul>
+
+<h2> Preparation (<%= $recipemark.preparation-minutes %>m) </h2>
+
+<ul><%   for $recipemark.instruction-list[0][] -> $instruction {
+    take "<li>" ~ $instruction.key ~ ". " ~ "<strong>" ~
+    $instruction.value.key ~
+    "</strong> "
+    ~ $instruction.value.value ~ "</li>\n";
+    }
+%>
+</ul>
+
+</body>
+</html>

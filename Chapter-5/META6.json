@@ -1,0 +1,15 @@
+{
+    "authors" : [
+	"JJ Merelo"
+    ],
+    "description" : "Perl 6 Recipes",
+    "license" : "Artistic-2.0",
+    "name" : "Perl 6 Recipes examples Chapter 5",
+    "perl" : "6.d",
+    "provides" : { },
+    "tags" : [
+	"book","Apress"
+    ],
+    "depends" : [ "JSON::Fast", "Config::INI", "YAMLish"],
+    "version" : "0.0.1"
+}
